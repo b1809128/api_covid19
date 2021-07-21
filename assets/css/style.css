@@ -15,7 +15,7 @@ html {
 }
 
 .form-control {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
@@ -102,6 +102,10 @@ html {
 
 .death {
     border-bottom: 10px solid rgba( 255, 0, 0, 0.5);
+}
+
+.treat {
+    border-bottom: 10px solid rgba( 255, 255, 0, 0.5);
 }
 
 .chart {
