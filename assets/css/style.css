@@ -1,0 +1,112 @@
+html {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+.h1__title {
+    display: flex;
+    justify-content: center;
+    color: rgba( 255, 0, 0, 0.5);
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.form-control__input {
+    width: 150px;
+    height: 30px;
+    margin: 0 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-control__btn {
+    width: 70px;
+    height: 35px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.form-control__btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.card__content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: block;
+    width: 250px;
+    margin: 10px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #333;
+}
+
+.card__title {
+    color: grey;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+}
+
+.card__number {
+    color: #333;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+}
+
+.card__date {
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+}
+
+.card__number-active {
+    color: #28a745;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px;
+}
+
+.infected {
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.death {
+    border-bottom: 10px solid rgba( 255, 0, 0, 0.5);
+}
+
+.chart {
+    display: flex;
+    /* jsustify-content: center; */
+    margin: auto;
+    /* align-items: center; */
+}
