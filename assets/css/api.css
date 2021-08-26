@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    color: rgba(221, 75, 57, 1);
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.card-item {
+    width: 200px;
+    height: 100px;
+    display: block;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    /* padding: 8px; */
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-number {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.infected {
+    color: rgba(221, 75, 57, 1);
+}
+
+.recovered {
+    color: #28a745;
+}
+
+.death {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.treatment {
+    color: rgba(243, 156, 18, 1);
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    color: rgba(255, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 25px 220px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn::before {
+    content: "";
+    left: 14px;
+    top: 25%;
+    position: absolute;
+    border: 8px solid;
+    border-color: transparent transparent transparent red;
+}
+
+.vietnam {
+    display: block;
+    text-align: center;
+}
+
+.background_1 {
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.background_2 {
+    background-color: #28a745;
+    color: white;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.background_3 {
+    background-color: rgba(243, 156, 18, 1);
+    color: white;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.background_4 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.map {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.image-map {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 400px;
+}
+
+.data-chart {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 600px; */
+   justify-content: center;
+   align-items: center;
+    padding: 12px 24px;
+}
+
+.data-chart-text {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(221, 75, 57, 1);
+}
+
+footer,
+#time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .btn {
+        margin: 12px auto;
+    }
+
+    .card{
+        display:flex;
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-item{        
+        width:140px;
+        height:95px;
+    }
+    .data-chart{
+        flex-direction: column;
+    }
+}
+
+

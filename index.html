@@ -2,60 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19 Report</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/api.css">
+    <link rel="icon" href="./assets/images/node2.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="h1__title">Viet Nam Covid-19 Report Map</h1>
-        <form action="" class="form-control">
-            <input type="text" class="form-control__input" name="search" id="search" requiredlist="countries" placeholder="Enter Name of Country">
-            <datalist>
-                <option value="World">
-                    World
-                </option>
-            </datalist>
-            <button type "button" class="form-control__btn">Search</button>
-        </form>
-        <div class="card__content">
-            <div class="card infected">
-                <p class="card__title">Infected</p>
-                <p class="card__number"></p>
-                <p class="card__date"></p>
-                <p class="card__number-active"></p>
+    <div class="app">
+        <div class="container">
+            <h1 class="title">Covid-19 tại Việt Nam</h1>
+            <h5 id="time"></h5>
+            <button class="btn">Cần Thơ</button>
+            <div class="card">
+
+                <div class="card-item infected vietnam">
+                    <div class="card-text background_1">Số ca nhiễm</div>
+                    <div class="card-number"></div>
+                    <div class="card-number-today"></div>
+                </div>
+                <div class="card-item recovered vietnam">
+                    <div class="card-text background_2">Khỏi</div>
+                    <div class="card-number"></div>
+                    <div class="card-number-today"></div>
+                </div>
+                <div class="card-item treatment vietnam">
+                    <div class="card-text background_3">Đang điều trị</div>
+                    <div class="card-number"></div>
+                </div>
+                <div class="card-item death vietnam">
+                    <div class="card-text background_4">Tử vong</div>
+                    <div class="card-number"></div>
+                    <div class="card-number-today"></div>
+                </div>
             </div>
-            <div class="card recovered">
-                <p class="card__title">Recovered</p>
-                <p class="card__number"></p>
-                <p class="card__date"></p>
-                <p class="card__number-active"></p>
-            </div>
-            <div class="card death">
-                <p class="card__title">Death</p>
-                <p class="card__number"></p>
-                <p class="card__date"></p>
-                <p class="card__number-active"></p>
-            </div>
-            <div class="card treat">
-                <p class="card__title">Under Treatment</p>
-                <p class="card__number"></p>
-                <p class="card__date"></p>
-                <p class="card__number-active"></p>
+            <button class="btn">Việt Nam</button>
+            <div class="card">
+                <div class="card-item infected vietnam">
+                    <div class="card-text background_1">Số ca nhiễm</div>
+                    <div class="card-number"></div>
+                    <div class="card-number-today"></div>
+                </div>
+                <div class="card-item recovered vietnam">
+                    <div class="card-text background_2">Khỏi</div>
+                    <div class="card-number"></div>
+                </div>
+                <div class="card-item treatment vietnam">
+                    <div class="card-text background_3">Đang điều trị</div>
+                    <div class="card-number"></div>
+                </div>
+                <div class="card-item death vietnam">
+                    <div class="card-text background_4">Tử vong</div>
+                    <div class="card-number"></div>
+                </div>
             </div>
         </div>
+
+        <div class="data-chart">
+            <div>
+                <p class="data-chart-text">Biểu đồ Covid-19 trong 7 ngày gần nhất tại Việt Nam </p>
+                <canvas id="chart-square" style="width:100%;max-width:600px"></canvas>
+            </div>
+            <canvas id="chart-circle" style="width:100%;max-width:400px"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2021 - All by QuocHuy's Developer </p>
+    </footer>
     </div>
 
-    <canvas id="myChart" style="width:100%;max-width:1000px" class="chart"></canvas>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js "></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script src="./assets/js/api.js "></script>
-
+    <script src="./assets/js/api.js"></script>
 </body>
 
 </html>
