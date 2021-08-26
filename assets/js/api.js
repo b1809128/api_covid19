@@ -70,9 +70,16 @@ function getChart(x, y, z) {
   var zValues = [];
 
   for (let i = 0; i < x.length; i++) {
-    xValues.push(x[i]);
-    yValues.push(y[i] * 1000);
-    zValues.push(z[i]);
+    if(y[i] != 0){      
+      xValues.push(x[i]);
+      yValues.push(y[i] * 1000);
+      zValues.push(z[i]);
+    }else{
+      y[i] = y[i-1];
+      xValues.push(x[i]);
+      yValues.push(y[i] * 1000);
+      zValues.push(z[i]);
+    }
   }
   console.log(xValues);
   console.log(yValues);
