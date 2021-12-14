@@ -1,5 +1,5 @@
 const url = "https://covid-19-hoc-tap.herokuapp.com/api/getInfected.php";
-
+//http://thaoanhshopvn.000webhostapp.com/crawl_data/api/getInfected.php
 fetch(url)
   .then((res) => {
     return res.json();
